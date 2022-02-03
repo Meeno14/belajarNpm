@@ -20,9 +20,8 @@ http.createServer((req, res) => {
     case "/profile":
       page('profile.html')
       break;
-
     default:
-
+       res.end('404 Not Found')
       break;
   }
 }).listen(8000);
